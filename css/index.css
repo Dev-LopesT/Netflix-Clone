@@ -14,7 +14,9 @@ body {
   height: 100vh;
 }
 
-.container-flex {
+/* Container que vai conter nosso background aplicando em nosso header e main */
+
+.container-flex-header-main {
   width: 100%;
   height: 600px;
   background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url("/img/background-nt.jpg");
@@ -22,20 +24,7 @@ body {
   position: absolute;
   background-attachment: fixed;
 }
-
-.container-lg-netflix {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-}
-
-.logo-netflix {
-  fill: var(--primary-color);
-  width: 9, 25rem;
-  height: 2.5rem;
-  transform: translate(0px, 4px);
-}
+/* Container que contém o header e elementos */
 
 .container-header {
   padding: 1% 20%;
@@ -46,12 +35,38 @@ body {
 }
 
 .header-flex {
-  display: flex;
+  width: 100%;
   height: 4rem;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+
 }
+
+.container-lg-netflix {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* span que contém logo netflix - SVG */
+
+.logo-netflix {
+  fill: var(--primary-color);
+  width: 9, 25rem;
+  height: 2.5rem;
+  transform: translate(0px, 4px);
+}
+
+/* Container do Select e do botão de hiperlink (a) */
+
+.container-btn {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Botão de hiperlink */
 
 .btn-login {
   display: inline-flex;
@@ -71,6 +86,16 @@ body {
   cursor: pointer;
 }
 
+.container-btn div select {
+background-color: rgba(0,0,0,0);
+border: 1px solid rgba(255,255,255,0.4);
+color: var(--primary-txt-color);
+border-radius: 6px;
+text-align: center;
+width: 6rem;
+height: 2rem;
+}
+
 /* Container - main */
 
 main {
@@ -88,12 +113,23 @@ main {
 /* Main - Div - Text */
 
 .container-txt-main {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+}
+
+.container-txt-main div {
+
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 50px 400px;
 }
 
 .title-main {
   color: var(--primary-txt-color);
   margin-bottom: 4px;
+  font-size: 36px;
 }
 
 .description-main {
