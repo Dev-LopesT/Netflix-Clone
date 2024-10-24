@@ -19,7 +19,7 @@ body {
 .container-flex-header-main {
   width: 100%;
   height: 600px;
-  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url("/img/background-nt.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url("./img/background-nt.jpg");
   background-repeat: no-repeat;
   position: absolute;
   background-attachment: fixed;
