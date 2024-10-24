@@ -31,13 +31,13 @@ body {
   width: 100%;
   max-width: 120rem;
   height: 7.5rem;
-  margin-bottom: 10%;
+  display: flex;
+  align-items: center;
 }
 
 .header-flex {
   width: 100%;
   height: 4rem;
-
 }
 
 .container-lg-netflix {
@@ -100,6 +100,8 @@ height: 2rem;
   color: rgb(0,0,0);
 }
 
+/* opção 1 do Select  */
+
 #op-one {
   background-color: rgb(100,100,100,0);
 }
@@ -116,6 +118,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-top: 2%;
 }
 
 /* Main - Div - Text */
