@@ -96,6 +96,14 @@ width: 6rem;
 height: 2rem;
 }
 
+.container-btn div select option {
+  color: rgb(0,0,0);
+}
+
+#op-one {
+  background-color: rgb(100,100,100,0);
+}
+
 /* Container - main */
 
 main {
